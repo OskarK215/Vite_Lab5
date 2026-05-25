@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link href="/src/style.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + JS</title>
+  </head>
+  <body>
+    <main>
+      <h1 class="text-2xl font-bold color-error">Urodzny?</h1>
+      <section>
+        <form>
+          <input type="date" id="dataUrodzenia" />
+          <label for="dataUrodzenia">Data urodzenia</label>
+
+          <button type="submit" class="bg-blue-300 p-4">Potwierdź</button>
+        </form>
+        <div><p id="returnBox">Proszę podaj swoją datę urodzenia</p></div>
+      </section>
+      <div id="app"></div>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
