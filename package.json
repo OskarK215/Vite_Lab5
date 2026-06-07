@@ -10,7 +10,6 @@
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
-    
   },
   "devDependencies": {
     "daisyui": "^5.5.20",
@@ -19,6 +18,7 @@
   "dependencies": {
     "@tailwindcss/vite": "^4.3.0",
     "dayjs": "^1.11.20",
+    "gh-pages": "^6.3.0",
     "tailwindcss": "^4.3.0"
   }
 }
