@@ -1,8 +1,10 @@
 import dayjs from 'dayjs';
 const dateObject = document.getElementById('dataUrodzenia');
-dateObject.addEventListener('input', (e) => {
-  console.log(e.target.value);
-  const dateOfB = e.target.value;
+const form = document.getElementById("formId")
+form.addEventListener("submit", (e)=>{
+  e.preventDefault()
+  console.log(form.dataUrodzenia.value)
+  const dateOfB = form.dataUrodzenia.value
   const dateOfBjs = dayjs(dateOfB);
   const output = dayjs().diff(dateOfBjs, 'days');
   console.log(output);
@@ -28,7 +30,6 @@ dateObject.addEventListener('input', (e) => {
   const body = document.getElementById('returnBox');
   dialog.setAttribute('open', true);
   body.innerHTML = '';
-
+  dialog.setAttribute("class", "bg-gray-200 text-red-600");
   body.append(dialog);
-  dialog.classList.add('bg-gray-200 text-red-600');
 });
