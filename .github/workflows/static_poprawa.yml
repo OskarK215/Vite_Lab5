@@ -31,7 +31,7 @@ jobs:
     steps:
       - uses: actions/setup-node@v4
       - run: npm install
-      - run: npm run build -- --base=/VIte_lab5/
+      - run: npm run build -- --base=/Vite_lab5/
       - name: Checkout
         uses: actions/checkout@v4
       - name: Setup Pages
