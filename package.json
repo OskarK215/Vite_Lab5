@@ -13,12 +13,11 @@
   },
   "devDependencies": {
     "daisyui": "^5.5.20",
-    "vite": "^8.0.13"
+    "vite": "^7.3.3"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.0",
     "dayjs": "^1.11.20",
-    "gh-pages": "^6.3.0",
     "tailwindcss": "^4.3.0"
   }
 }
