@@ -22,5 +22,40 @@
       <div id="app"></div>
     </main>
     <script type="module" src="/src/main.js"></script>
+    <table>
+      <thead>
+        <tr class="p-4">
+          <th scope="col" class="p-4">
+            ID
+          </th>
+          <th scope="col" class="p-4">
+            author
+          </th>
+          <th scope="col" class="p-4">
+            content
+          </th>
+          <th scope="col" class="p-4">
+            created_at
+          </th>
+          <th scope="col"  class="p-4">
+            subtitle
+          </th>
+          <th scope="col" class="p-4">
+            title
+          </th>
+        </tr>
+      </thead>
+      <tbody id="table_body">
+
+      </tbody>
+
+    </table>
+    <form id="new_article">
+      <label for="author">author</label> <input type="text" id="author" name="author" class="bg-blue-300" required>
+      <label for="content">content</label> <textarea name="content" id="content" cols="30" rows="10" class="bg-blue-300" required></textarea>
+      <label for="title">title</label> <input type="text" id="title" class="bg-blue-300" required>
+      <label for="subtitle">subtitle</label> <input type="text" id="subtitle" class="bg-blue-300" required>
+      <button type="submit">Potwierdź</button>
+    </form>
   </body>
 </html>
